@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "registry_version": "2026-08-14.1",
+  "last_reviewed": "2026-08-14",
+  "authority_policy": "Official vendor objectives define scope. Instructional sources and runtime AI may explain the spine but never redefine it.",
+  "certifications": [
+    {
+      "id": "aplus",
+      "name": "CompTIA A+",
+      "vendor": "CompTIA",
+      "sequence_order": 1,
+      "scope_status": "published_pack",
+      "exam_sittings": 2,
+      "exams": [
+        {
+          "code": "220-1201",
+          "name": "A+ Core 1",
+          "version": "V15 document 3.0",
+          "official_source": {
+            "url": "https://assets.ctfassets.net/82ripq7fjls2/1oSdlyujpaX3GrM0rir6Ge/91afb2be72785281e8fb4c0d9a70c6f4/CompTIA-A-220-1201-Exam-Objectives-3.0.pdf",
+            "sha256": "de9a7d3e9db90b0079f4b3ff6ca5f75d31744ab47134493f841f48671e17c9d2",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-07-30"
+          },
+          "domains": [
+            {"code": "1", "name": "Mobile Devices", "weight": 13},
+            {"code": "2", "name": "Networking", "weight": 23},
+            {"code": "3", "name": "Hardware", "weight": 25},
+            {"code": "4", "name": "Virtualization and Cloud Computing", "weight": 11},
+            {"code": "5", "name": "Hardware and Network Troubleshooting", "weight": 28}
+          ]
+        },
+        {
+          "code": "220-1202",
+          "name": "A+ Core 2",
+          "version": "V15 document 3.0",
+          "official_source": {
+            "url": "https://assets.ctfassets.net/82ripq7fjls2/6I8WL66IBa1AUovioDGrnM/f74a7eca336fd4e4c8e723a1f893086d/CompTIA-A-220-1202-Exam-Objectives-3.0.pdf",
+            "sha256": "65c382d32617967062012780242481c64012f5c3d67ca555081d9438f0d857b4",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-07-30"
+          },
+          "domains": [
+            {"code": "1", "name": "Operating Systems", "weight": 28},
+            {"code": "2", "name": "Security", "weight": 28},
+            {"code": "3", "name": "Software Troubleshooting", "weight": 23},
+            {"code": "4", "name": "Operational Procedures", "weight": 21}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "netplus",
+      "name": "CompTIA Network+",
+      "vendor": "CompTIA",
+      "sequence_order": 2,
+      "scope_status": "domain_scaffold",
+      "exam_sittings": 1,
+      "exams": [
+        {
+          "code": "N10-009",
+          "name": "CompTIA Network+",
+          "version": "V9 document 4.0",
+          "official_source": {
+            "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-network-n10-009-exam-objectives-%284-0%29-%281%29.pdf",
+            "sha256": "f504a9367d1dafbb7ad9830907a5f65bcb63071c52e0a44a114899c781d6a322",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-08-14"
+          },
+          "domains": [
+            {"code": "1", "name": "Networking Concepts", "weight": 23},
+            {"code": "2", "name": "Network Implementation", "weight": 20},
+            {"code": "3", "name": "Network Operations", "weight": 19},
+            {"code": "4", "name": "Network Security", "weight": 14},
+            {"code": "5", "name": "Network Troubleshooting", "weight": 24}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secplus",
+      "name": "CompTIA Security+",
+      "vendor": "CompTIA",
+      "sequence_order": 3,
+      "scope_status": "domain_scaffold",
+      "exam_sittings": 1,
+      "exams": [
+        {
+          "code": "SY0-701",
+          "name": "CompTIA Security+",
+          "version": "V7 document 5.0",
+          "official_source": {
+            "url": "https://assets.ctfassets.net/82ripq7fjls2/6TYWUym0Nudqa8nGEnegjG/0f9b974d3b1837fe85ab8e6553f4d623/CompTIA-Security-Plus-SY0-701-Exam-Objectives.pdf",
+            "sha256": "64e5a75df0e6105c724990476b678cf63533d241261538f53d99d2cc73690eba",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-08-14"
+          },
+          "domains": [
+            {"code": "1", "name": "General Security Concepts", "weight": 12},
+            {"code": "2", "name": "Threats, Vulnerabilities, and Mitigations", "weight": 22},
+            {"code": "3", "name": "Security Architecture", "weight": 18},
+            {"code": "4", "name": "Security Operations", "weight": 28},
+            {"code": "5", "name": "Security Program Management and Oversight", "weight": 20}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloudplus",
+      "name": "CompTIA Cloud+",
+      "vendor": "CompTIA",
+      "sequence_order": 4,
+      "scope_status": "domain_scaffold",
+      "exam_sittings": 1,
+      "exams": [
+        {
+          "code": "CV0-004",
+          "name": "CompTIA Cloud+",
+          "version": "V4 document 1.2",
+          "official_source": {
+            "url": "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-cloud-cv0-004-exam-objectives-%281-2%29.pdf",
+            "sha256": "51aac6198b399d75431eca2493fdfcf554b7e7706dcf5f643a65c51eb90e113f",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-08-14"
+          },
+          "domains": [
+            {"code": "1", "name": "Cloud Architecture", "weight": 23},
+            {"code": "2", "name": "Deployment", "weight": 19},
+            {"code": "3", "name": "Security", "weight": 19},
+            {"code": "4", "name": "Operations", "weight": 17},
+            {"code": "5", "name": "Troubleshooting", "weight": 12},
+            {"code": "6", "name": "DevOps Fundamentals", "weight": 10}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ccna",
+      "name": "CCNA Automation",
+      "vendor": "Cisco",
+      "sequence_order": 5,
+      "scope_status": "domain_scaffold",
+      "exam_sittings": 1,
+      "exams": [
+        {
+          "code": "200-901",
+          "name": "Automating Networks Using Cisco Platforms",
+          "version": "CCNAAUTO v1.1",
+          "official_source": {
+            "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+            "sha256": "31a15fbaa9480380e4a87bf9627be4b70ed38950107c2da319abfed0a8414193",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-08-14"
+          },
+          "domains": [
+            {"code": "1", "name": "Software Development and Design", "weight": 15},
+            {"code": "2", "name": "Understanding and Using APIs", "weight": 20},
+            {"code": "3", "name": "Cisco Platforms and Development", "weight": 15},
+            {"code": "4", "name": "Application Deployment and Security", "weight": 15},
+            {"code": "5", "name": "Infrastructure and Automation", "weight": 20},
+            {"code": "6", "name": "Network Fundamentals", "weight": 15}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ccsp",
+      "name": "ISC2 CCSP",
+      "vendor": "ISC2",
+      "sequence_order": 6,
+      "scope_status": "domain_scaffold",
+      "exam_sittings": 1,
+      "credential_note": "Passing the exam may result in Associate of ISC2 status until the professional experience requirement is satisfied.",
+      "exams": [
+        {
+          "code": "CCSP",
+          "name": "Certified Cloud Security Professional",
+          "version": "Outline effective 2026-08-01",
+          "official_source": {
+            "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+            "sha256": "61189f31c2283b655d7e7a1daa31f3a775f115939b2efe1305400dc87346e41e",
+            "verification_status": "hash_verified",
+            "last_verified": "2026-08-14"
+          },
+          "domains": [
+            {"code": "1", "name": "Cloud Concepts, Architecture and Design", "weight": 17},
+            {"code": "2", "name": "Cloud Data Security", "weight": 20},
+            {"code": "3", "name": "Cloud Platform and Infrastructure Security", "weight": 17},
+            {"code": "4", "name": "Cloud Application Security", "weight": 16},
+            {"code": "5", "name": "Cloud Security Operations", "weight": 17},
+            {"code": "6", "name": "Legal, Risk and Compliance", "weight": 13}
+          ]
+        }
+      ]
+    }
+  ]
+}

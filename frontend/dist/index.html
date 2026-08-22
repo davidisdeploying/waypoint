@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Waypoint">
+    <link rel="manifest" href="/v2/site.webmanifest">
+    <link rel="icon" href="/v2/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/v2/favicon.svg" type="image/svg+xml">
+    <script>
+      (() => {
+        const icon = document.createElement("link");
+        icon.rel = "apple-touch-icon";
+        icon.sizes = "180x180";
+        icon.href = matchMedia("(prefers-color-scheme: dark)").matches
+          ? "/v2/apple-touch-icon-dark.png?v=1"
+          : "/v2/apple-touch-icon.png?v=1";
+        document.head.appendChild(icon);
+      })();
+    </script>
+    <noscript><link rel="apple-touch-icon" sizes="180x180" href="/v2/apple-touch-icon.png?v=1"></noscript>
+    <title>Waypoint</title>
+    <script type="module" crossorigin src="/v2/assets/index-DF75RiO1.js"></script>
+    <link rel="stylesheet" crossorigin href="/v2/assets/index-C9w4aUoh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

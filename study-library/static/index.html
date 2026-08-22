@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Library — CompTIA A+</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="app-header">
+  <h1>Study Library</h1>
+  <p class="subtitle">Private A+ study tracker — Core 1 (220-1201) &amp; Core 2 (220-1202)</p>
+</header>
+<nav class="tabs" aria-label="Primary views">
+  <button type="button" class="tab" data-view="next" aria-current="page">Study Next</button>
+  <button type="button" class="tab" data-view="overview">Overview</button>
+  <button type="button" class="tab" data-view="curriculum">Curriculum</button>
+  <button type="button" class="tab" data-view="library">Library</button>
+  <button type="button" class="tab" data-view="search">Search</button>
+  <button type="button" class="tab" data-view="objectives">Objectives</button>
+  <button type="button" class="tab" data-view="practice">Practice</button>
+  <button type="button" class="tab" data-view="settings">Settings / Data</button>
+</nav>
+<main id="main" tabindex="-1">
+  <section id="view-next" class="view" data-view-panel="next"></section>
+  <section id="view-overview" class="view" data-view-panel="overview" hidden></section>
+  <section id="view-curriculum" class="view" data-view-panel="curriculum" hidden></section>
+  <section id="view-library" class="view" data-view-panel="library" hidden></section>
+  <section id="view-search" class="view" data-view-panel="search" hidden></section>
+  <section id="view-objectives" class="view" data-view-panel="objectives" hidden></section>
+  <section id="view-practice" class="view" data-view-panel="practice" hidden></section>
+  <section id="view-settings" class="view" data-view-panel="settings" hidden></section>
+  <section id="view-diagnostic" class="view" data-view-panel="diagnostic" hidden></section>
+</main>
+<div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+<script src="/js/app.js"></script>
+</body>
+</html>

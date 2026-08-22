@@ -1,0 +1,27 @@
+[Unit]
+Description=Waypoint Study Core FastAPI canary
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/waypoint/study-library
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=STUDY_LIBRARY_HOST=127.0.0.1
+Environment=STUDY_LIBRARY_FASTAPI_PORT=8841
+Environment=STUDY_LIBRARY_DB=%h/waypoint/study-library/data/study_library.db
+Environment=STUDY_LIBRARY_SERVICE_TOKEN_FILE=%h/.config/study-library/service-token
+ExecStart=%h/waypoint/study-library/.venv-api/bin/uvicorn study_core.api:app --host 127.0.0.1 --port 8841
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/waypoint/study-library/data
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryMax=512M
+
+[Install]
+WantedBy=default.target

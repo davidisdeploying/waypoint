@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "context_version": "2026-08-14.1",
+  "canonical_source": {
+    "path": "/home/david/Vaults/career-vault/research/skills-credentials-claims.md",
+    "sha256": "dbace9893cecdd9c6d1630038518a84210f4966080d7851c20aa7121fccfe0a5",
+    "last_verified": "2026-08-14"
+  },
+  "policy": {
+    "target_claim_ids": ["target-apply-now", "target-adjacent", "target-stretch"],
+    "exclusion_claim_ids": ["target-exclusion-cybersecurity"],
+    "boundary_claim_ids": ["boundary-cloud-security-infrastructure-only"],
+    "rule": "Career context may prioritize examples, labs, and review order inside official scope. It may not remove an objective, grant mastery, or turn study into professional experience."
+  },
+  "certifications": {
+    "aplus": {
+      "relevance": "direct",
+      "claim_ids": [
+        "skill-windows-endpoint-deployment",
+        "skill-firmware-device-security-configuration",
+        "skill-hardware-lifecycle-breakfix",
+        "skill-asset-inventory-operations",
+        "skill-linux-administration",
+        "skill-networking-foundations"
+      ],
+      "job_families": ["infrastructure-technician", "data-center", "endpoint-support", "network-support"]
+    },
+    "netplus": {
+      "relevance": "direct",
+      "claim_ids": ["skill-networking-foundations", "skill-linux-administration", "project-homelab-five-node-infrastructure"],
+      "job_families": ["NOC", "network-support", "infrastructure-support", "cloud-support"]
+    },
+    "secplus": {
+      "relevance": "supporting",
+      "claim_ids": ["boundary-cloud-security-infrastructure-only", "skill-firmware-device-security-configuration"],
+      "job_families": ["infrastructure-support", "cloud-support"],
+      "note": "Treat security as infrastructure competency. Do not target dedicated cybersecurity roles."
+    },
+    "cloudplus": {
+      "relevance": "direct",
+      "claim_ids": ["skill-aws-coursework", "skill-azure-coursework", "skill-containers", "skill-linux-administration"],
+      "job_families": ["cloud-support", "cloud-operations-junior", "infrastructure-support"]
+    },
+    "ccna": {
+      "relevance": "direct",
+      "claim_ids": ["skill-python-automation", "skill-networking-foundations", "project-homelab-five-node-infrastructure", "project-loupe"],
+      "job_families": ["automation-support", "network-support", "cloud-support", "infrastructure-support"]
+    },
+    "ccsp": {
+      "relevance": "supporting",
+      "claim_ids": ["boundary-cloud-security-infrastructure-only", "skill-aws-coursework", "skill-azure-coursework"],
+      "job_families": ["cloud-support", "cloud-operations-junior", "infrastructure-support"],
+      "note": "Use cloud security knowledge to strengthen infrastructure work, not to redirect the career plan toward cybersecurity."
+    }
+  }
+}

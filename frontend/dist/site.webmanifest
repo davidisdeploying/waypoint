@@ -1,0 +1,20 @@
+{
+  "name": "Waypoint",
+  "short_name": "Waypoint",
+  "id": "/v2/",
+  "description": "Private study, certification, and degree workspace.",
+  "start_url": "/v2/",
+  "scope": "/v2/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "color_scheme_dark": {
+    "background_color": "#111111",
+    "theme_color": "#111111"
+  },
+  "categories": ["education", "productivity"],
+  "icons": [
+    {"src": "/v2/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/v2/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}
