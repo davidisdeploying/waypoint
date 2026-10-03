@@ -1,0 +1,17 @@
+[Unit]
+Description=Back up and verify Study Library SQLite database
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/waypoint/study-library
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=STUDY_LIBRARY_DB=%h/waypoint/study-library/data/study_library.db
+Environment=STUDY_LIBRARY_BACKUP_DIR=%h/waypoint/study-library/data/backups
+ExecStart=/usr/bin/python3 %h/waypoint/study-library/scripts/backup.py --keep 14
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/waypoint/study-library/data
+RestrictAddressFamilies=AF_UNIX
+MemoryMax=256M

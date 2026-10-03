@@ -1,0 +1,5 @@
+-- Schema v16: foreground-only timing for resumable guided study sessions.
+--
+-- Existing guided_study_sessions tables receive their three additive columns
+-- through lib/db.py because SQLite has no idempotent ADD COLUMN form. Fresh
+-- databases receive the same columns from schema_v5.sql.

@@ -1,0 +1,138 @@
+{
+  "certification_code": "aplus",
+  "certification_name": "CompTIA A+",
+  "pack_version": "aplus-v15-2025.04",
+  "exam_version": "V15",
+  "policy_version": "certification-pack-policy-v1",
+  "spine_registry_version": "2026-08-14.1",
+  "official_hosts": ["assets.ctfassets.net"],
+  "exams": [
+    {
+      "code": "220-1201",
+      "name": "A+ Core 1 (220-1201)",
+      "objectives_document_version": "3.0",
+      "objectives_file": "aplus-v15-220-1201-objectives.json",
+      "objectives_sha256": "cf18d542c27b010dcebb810b66ab53657c2ea0beb17251758d580e11ea18a4b5",
+      "objective_codes": [
+        "1.1", "1.2", "1.3",
+        "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8",
+        "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8",
+        "4.1", "4.2",
+        "5.1", "5.2", "5.3", "5.4", "5.5", "5.6"
+      ],
+      "domains": [
+        {"code": "1", "name": "Mobile Devices", "weight": 13},
+        {"code": "2", "name": "Networking", "weight": 23},
+        {"code": "3", "name": "Hardware", "weight": 25},
+        {"code": "4", "name": "Virtualization and Cloud Computing", "weight": 11},
+        {"code": "5", "name": "Hardware and Network Troubleshooting", "weight": 28}
+      ]
+    },
+    {
+      "code": "220-1202",
+      "name": "A+ Core 2 (220-1202)",
+      "objectives_document_version": "3.0",
+      "objectives_file": "aplus-v15-220-1202-objectives.json",
+      "objectives_sha256": "606b01ff7b5f00bca9b53135387d2dfc8f9cf3b49a956edfe1360ec16fcd684d",
+      "objective_codes": [
+        "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11",
+        "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "2.9", "2.10", "2.11",
+        "3.1", "3.2", "3.3", "3.4",
+        "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "4.7", "4.8", "4.9", "4.10"
+      ],
+      "domains": [
+        {"code": "1", "name": "Operating Systems", "weight": 28},
+        {"code": "2", "name": "Security", "weight": 28},
+        {"code": "3", "name": "Software Troubleshooting", "weight": 23},
+        {"code": "4", "name": "Operational Procedures", "weight": 21}
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_key": "comptia-aplus-220-1201-objectives-v15-3.0",
+      "title": "CompTIA A+ 220-1201 V15 Certification Exam Objectives",
+      "publisher": "CompTIA",
+      "source_type": "official_objectives",
+      "authority_tier": 1,
+      "version_label": "220-1201 V15, document 3.0",
+      "exam_codes": ["220-1201"],
+      "source_url": "https://assets.ctfassets.net/82ripq7fjls2/1oSdlyujpaX3GrM0rir6Ge/91afb2be72785281e8fb4c0d9a70c6f4/CompTIA-A-220-1201-Exam-Objectives-3.0.pdf",
+      "source_sha256": "de9a7d3e9db90b0079f4b3ff6ca5f75d31744ab47134493f841f48671e17c9d2",
+      "use_role": "authoritative_scope",
+      "required": true,
+      "verified_at": "2026-07-30T11:00:00Z"
+    },
+    {
+      "source_key": "comptia-aplus-220-1202-objectives-v15-3.0",
+      "title": "CompTIA A+ 220-1202 V15 Certification Exam Objectives",
+      "publisher": "CompTIA",
+      "source_type": "official_objectives",
+      "authority_tier": 1,
+      "version_label": "220-1202 V15, document 3.0",
+      "exam_codes": ["220-1202"],
+      "source_url": "https://assets.ctfassets.net/82ripq7fjls2/6I8WL66IBa1AUovioDGrnM/f74a7eca336fd4e4c8e723a1f893086d/CompTIA-A-220-1202-Exam-Objectives-3.0.pdf",
+      "source_sha256": "65c382d32617967062012780242481c64012f5c3d67ca555081d9438f0d857b4",
+      "use_role": "authoritative_scope",
+      "required": true,
+      "verified_at": "2026-07-30T11:00:00Z"
+    },
+    {
+      "source_key": "schmidt-aplus-v15-10e",
+      "title": "Complete A+ Guide to IT Hardware and Software, V15, 10th Edition",
+      "publisher": "Pearson",
+      "source_type": "instruction",
+      "authority_tier": 3,
+      "version_label": "V15 / 220-1201 and 220-1202",
+      "exam_codes": ["220-1201", "220-1202"],
+      "book_slug": "aplus-core-guide",
+      "ingest": {
+        "kind": "guide",
+        "parser": "inline-prefixed-objectives-v1",
+        "title_hint": "Complete A+ Guide to IT Hardware and Software",
+        "dir": "/home/david/Vaults/career-vault/files/2026/2026-07-29/localworker-comptia-a-plus-guide-ai-markdown-v2"
+      },
+      "source_sha256": "2004f7be6a38d4a412908a87daffff1f427e220861e8764098b99f16ab30853e",
+      "use_role": "supplemental_instruction",
+      "required": true
+    },
+    {
+      "source_key": "mcmillan-aplus-review-6e",
+      "title": "CompTIA A+ Complete Review Guide, Sixth Edition",
+      "publisher": "Wiley",
+      "source_type": "review",
+      "authority_tier": 3,
+      "version_label": "220-1201 and 220-1202",
+      "exam_codes": ["220-1201", "220-1202"],
+      "book_slug": "aplus-review-guide",
+      "ingest": {
+        "kind": "review",
+        "parser": "divider-bare-objectives-domain-v1",
+        "title_hint": "CompTIA A+ Complete Review Guide",
+        "dir": "/home/david/Vaults/career-vault/files/2026/2026-07-29/localworker-comptia-a-plus-review-guide-ai-markdown-v2"
+      },
+      "source_sha256": "87d00b096a23fabe02739978ae589ff6c74ef76bc78e5f400173e2745cd4e0ee",
+      "use_role": "primary_instruction",
+      "required": true
+    },
+    {
+      "source_key": "oshea-aplus-practice-4e",
+      "title": "CompTIA A+ Complete Practice Tests, Fourth Edition",
+      "publisher": "Wiley",
+      "source_type": "assessment",
+      "authority_tier": 4,
+      "version_label": "220-1201 and 220-1202",
+      "exam_codes": ["220-1201", "220-1202"],
+      "book_slug": "aplus-practice-tests",
+      "ingest": {
+        "kind": "practice",
+        "parser": "divider-bare-objectives-v1",
+        "title_hint": "CompTIA A+ Complete Practice Tests",
+        "dir": "/home/david/Vaults/career-vault/files/2026/2026-07-29/localworker-comptia-a-plus-practice-tests-ai-markdown-v2"
+      },
+      "source_sha256": "0a6c22e818f0c727a0a2522ba13c27974bc894db05d68d7416f794156e90e938",
+      "use_role": "assessment_only",
+      "required": false
+    }
+  ]
+}
