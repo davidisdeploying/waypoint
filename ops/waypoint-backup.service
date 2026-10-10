@@ -1,0 +1,15 @@
+[Unit]
+Description=Verified online backup of Waypoint state
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/waypoint
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 %h/waypoint/scripts/backup.py --database %h/waypoint/data/waypoint.db --output-dir %h/waypoint/data/backups --retain 14
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/waypoint/data
+RestrictAddressFamilies=AF_UNIX
+MemoryMax=128M
