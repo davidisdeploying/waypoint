@@ -1,0 +1,25 @@
+[Unit]
+Description=Waypoint serial book conversion and indexing worker
+After=network-online.target study-library.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h/waypoint/study-library
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=STUDY_LIBRARY_DB=%h/waypoint/study-library/data/study_library.db
+Environment=BOOK_JOB_INPUT_ROOT=%h/Vaults/career-vault/files
+Environment=BOOK_JOB_OUTPUT_ROOT=%h/Vaults/career-vault/files
+ExecStart=/usr/bin/python3 %h/waypoint/study-library/scripts/book_worker.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/waypoint/study-library/data %h/Vaults/career-vault/files
+RestrictAddressFamilies=AF_UNIX
+MemoryMax=768M
+
+[Install]
+WantedBy=default.target

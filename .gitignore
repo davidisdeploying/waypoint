@@ -1,0 +1,29 @@
+# Local configuration and credentials
+.env
+.env.*
+credentials*
+secrets*
+*.key
+*.pem
+
+# Dependency and build output
+node_modules/
+*.tsbuildinfo
+dist/
+!frontend/dist/
+!frontend/dist/**
+build/
+.cache/
+
+# Runtime data and logs
+*.db
+*.db-*
+*.sqlite*
+*.log
+__pycache__/
+*.pyc
+
+# Editor and OS residue
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily verified backup of Waypoint state
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=20m
+Unit=waypoint-backup.service
+
+[Install]
+WantedBy=timers.target

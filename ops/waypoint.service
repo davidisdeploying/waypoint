@@ -1,0 +1,29 @@
+[Unit]
+Description=Waypoint private production dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/waypoint
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=WAYPOINT_HOST=127.0.0.1
+Environment=WAYPOINT_PORT=8790
+Environment=WAYPOINT_STATE_DB=%h/waypoint/data/waypoint.db
+Environment=STUDY_LIBRARY_HOST=127.0.0.1
+Environment=STUDY_LIBRARY_PORT=8840
+Environment=WAYPOINT_STUDY_TOKEN_FILE=%h/.config/waypoint/study-token
+ExecStart=/usr/bin/python3 %h/waypoint/ops/server.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/waypoint/data
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryMax=128M
+
+[Install]
+WantedBy=default.target

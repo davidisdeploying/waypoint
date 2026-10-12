@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Waypoint dark app icon">
+  <rect width="120" height="120" fill="#111111"/>
+  <path d="M60 19 L101 60 L60 101 L19 60 Z" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="miter"/>
+  <path d="M60 42 L78 60 L60 78 L42 60 Z" fill="#e5331c"/>
+</svg>
